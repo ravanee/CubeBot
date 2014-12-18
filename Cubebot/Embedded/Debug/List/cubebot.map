@@ -1,0 +1,1897 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.0.0.46                                          #
+#                                                                              #
+#           Link time     =  18/Dec/2014  01:49:25                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\L #
+#                            ist\cubebot.map                                   #
+#           Output file 1 =  D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\E #
+#                            xe\cubebot.d43                                    #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\Comm.r43                                       #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\DigitalIO.r43                                  #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\EasyDriver.r43                                 #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\main.r43                                       #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\Robot.r43                                      #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\RobotArm.r43                                   #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\Servo.r43                                      #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\Stepper.r43                                    #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\StepperController.r43                          #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\Timer.r43                                      #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\O #
+#                            bj\UART.r43                                       #
+#                            -o                                                #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\E #
+#                            xe\cubebot.d43                                    #
+#                            -l                                                #
+#                            D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\L #
+#                            ist\cubebot.map                                   #
+#                            -xmsn "-ID:\Embedded Workbench 7.0\430\LIB\" -f   #
+#                            "D:\Embedded Workbench 7.0\430\config\linker\lnk4 #
+#                            30F5529.xcl"                                      #
+#                            (-cmsp430 -D?CPU30_OFFSET=2 -QCODE_I=CODE_ID      #
+#                            -QTLS16_I=TLS16_ID -Z(CONST)INFO=1800-19FF        #
+#                            -Z(CONST)INFOA=1980-19FF                          #
+#                            -Z(CONST)INFOB=1900-197F                          #
+#                            -Z(CONST)INFOC=1880-18FF                          #
+#                            -Z(CONST)INFOD=1800-187F                          #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,TLS16_I=2400-4 #
+#                            3FF                                               #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE             #
+#                            -Z(DATA)CODE_I                                    #
+#                            -Z(DATA)DATA20_I,DATA20_Z,DATA20_N,DATA20_HEAP+_D #
+#                            ATA20_HEAP_SIZE                                   #
+#                            -Z(DATA)CSTACK+_STACK_SIZE#                       #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=4400-FF7F                                    #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE16=4400-FF7F          #
+#                            -P(CODE)CODE=4400-FF7F,10000-243FF                #
+#                            -Z(CODE)CODE_ID                                   #
+#                            -Z(CONST)DATA20_C,DATA20_ID=4400-FF7F,10000-243FF #
+#                            -Z(CODE)INTVEC=FF80-FFFF                          #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            "D:\Embedded Workbench 7.0\430\config\linker\mult #
+#                            iplier32_loc2.xcl"                                #
+#                            (-e?Mul8HwLoc2=?Mul8 -e?Mul16HwLoc2=?Mul16        #
+#                            -e?Mul16to32uHwLoc2=?Mul16to32u                   #
+#                            -e?Mul16to32sHwLoc2=?Mul16to32s                   #
+#                            -e?Mul32Hw32Loc2=?Mul32                           #
+#                            -e?Mul64Hw32Loc2=_Mul64i                          #
+#                            -e?Mul32u32uto64iHw32Loc2=_Mul32u32uto64i         #
+#                            -e?Mul32fHwLoc2=_Mul32f                           #
+#                            -e_Mul64fHwPtrLoc2=_Mul64fPtr)                    #
+#                            -D_STACK_SIZE=100 -rt                             #
+#                            "D:\Embedded Workbench 7.0\430\lib\dlib\dl430xlsf #
+#                            n.r43"                                            #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=0 -s __program_start          #
+#                            -D_DATA20_HEAP_SIZE=0                             #
+#                                                                              #
+#                           Copyright (C) 1987-2014 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           4468  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __code_model               = large
+  __core                     = 430X
+  __data_model               = small
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0000 
+           _DATA16_HEAP_SIZE       0000 
+           _STACK_SIZE             0100 
+           ?CPU30_OFFSET           0002 
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\Comm.r43
+  PROGRAM MODULE, NAME : Comm
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 24A0 - 251F (0x80 bytes), align: 0
+  Segment part 2.             Intra module refs:   COMM_Init
+                                                   COMM_Send
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TxMessage               24A0 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2520 - 259F (0x80 bytes), align: 0
+  Segment part 3.             Intra module refs:   COMM_Init
+                                                   comm_DecodeRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RxMessage               2520 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 25A0 - 25A3 (0x4 bytes), align: 0
+  Segment part 4.             Intra module refs:   COMM_Init
+                                                   comm_DecodeRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           DecodeCtrl              25A0 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2458 - 2463 (0xc bytes), align: 1
+  Segment part 5.             Intra module refs:   COMM_Init
+                                                   COMM_RegisterHandler
+                                                   comm_DispatchMessage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RxHandlers              2458 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5528 - 5555 (0x2e bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           COMM_Init               5528            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4E62 - 4EC9 (0x68 bytes), align: 1
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           COMM_Send               4E62            ROBOT_Config (Robot)
+                                                   ROBOT_SerialDecode (Robot)
+                                                   ROBOT_Task (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58A8 - 58AF (0x8 bytes), align: 1
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           COMM_Task               58A8            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5780 - 5797 (0x18 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           COMM_RegisterHandler    5780            ROBOT_Init (Robot)
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58CA - 58CD (0x4 bytes), align: 1
+  Segment part 10.            Intra module refs:   COMM_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           comm_RxTask             58CA 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58C6 - 58C9 (0x4 bytes), align: 1
+  Segment part 9.             Intra module refs:   COMM_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           comm_TxTask             58C6 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4A52 - 4B29 (0xd8 bytes), align: 1
+  Segment part 8.             Intra module refs:   comm_RxTask
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           comm_DecodeRx           4A52 
+               calls direct
+               CSTACK = 00000000 ( 0000000A )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 56AC - 56C9 (0x1e bytes), align: 1
+  Segment part 7.             Intra module refs:   COMM_Send
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           comm_CalcChecksum       56AC 
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 54CC - 54F9 (0x2e bytes), align: 1
+  Segment part 6.             Intra module refs:   comm_DecodeRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           comm_DispatchMessage    54CC 
+               calls indirect
+               CSTACK = 00000000 ( 00000010 )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\DigitalIO.r43
+  PROGRAM MODULE, NAME : DigitalIO
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0202 - 0203 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   PORTS_OUT
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAOUT_L              0202 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAOUT                   0202 
+           PAOUT_H                 0203 
+           PAOUT_L                 0202 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0222 - 0223 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   PORTS_OUT
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBOUT_L              0222 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBOUT                   0222 
+           PBOUT_H                 0223 
+           PBOUT_L                 0222 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0242 - 0243 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   PORTS_OUT
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCOUT_L              0242 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCOUT                   0242 
+           PCOUT_H                 0243 
+           PCOUT_L                 0242 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0262 - 0263 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   PORTS_OUT
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PDOUT_L              0262 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PDOUT                   0262 
+           PDOUT_H                 0263 
+           PDOUT_L                 0262 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4400 - 440F (0x10 bytes), align: 1
+  Segment part 6.             Intra module refs:   DIO_SetPin
+                                                   DIO_TogglePin
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PORTS_OUT               4400 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 57C6 - 57DB (0x16 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DIO_SetGPIO             57C6            EZ_Step (EasyDriver)
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5264 - 52AB (0x48 bytes), align: 1
+  Segment part 9.             Intra module refs:   DIO_SetGPIO
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DIO_SetPin              5264            main (main)
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5602 - 5627 (0x26 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DIO_TogglePin           5602            LEDs (main)
+               CSTACK = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\EasyDriver.r43
+  PROGRAM MODULE, NAME : EasyDriver
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58C2 - 58C5 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           EZ_GetMicroStepMult     58C2            STEPPER_StepsPerRev (Stepper)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5370 - 53AD (0x3e bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           EZ_Step                 5370            STEPPER_Step (Stepper)
+               calls direct
+               CSTACK = 00000000 ( 0000000E )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\main.r43
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0204 - 0205 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   ROBOT_Init (Robot)
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PADIR_L              0204 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PADIR                   0204 
+           PADIR_H                 0205 
+           PADIR_L                 0204 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0224 - 0225 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   ROBOT_Init (Robot)
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBDIR_L              0224 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBDIR                   0224 
+           PBDIR_H                 0225 
+           PBDIR_L                 0224 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 024A - 024B (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   UCS_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCSEL_L              024A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCSEL                   024A 
+           PCSEL_H                 024B 
+           PCSEL_L                 024A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0102 - 0103 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   UCS_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_SFRIFG1_L            0102 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SFRIFG1                 0102 
+           SFRIFG1_H               0103 
+           SFRIFG1_L               0102 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0168 - 0169 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   UCS_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL4_L            0168 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL4                 0168 
+           UCSCTL4_H               0169 
+           UCSCTL4_L               0168 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 016C - 016D (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   UCS_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL6_L            016C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL6                 016C 
+           UCSCTL6_H               016D 
+           UCSCTL6_L               016C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 016E - 016F (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   UCS_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL7_L            016E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL7                 016E 
+           UCSCTL7_H               016F 
+           UCSCTL7_L               016E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 015C - 015D (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_WDTCTL_L             015C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           WDTCTL                  015C 
+           WDTCTL_H                015D 
+           WDTCTL_L                015C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5628 - 564B (0x24 bytes), align: 1
+  Segment part 17.            Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCS_Init                5628 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 549A - 54CB (0x32 bytes), align: 1
+  Segment part 16.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LEDs                    549A 
+               calls direct
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4ECA - 4F29 (0x60 bytes), align: 1
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    4ECA            Segment part 23 (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\Robot.r43
+  PROGRAM MODULE, NAME : Robot
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 020A - 020B (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   ROBOT_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PASEL_L              020A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PASEL                   020A 
+           PASEL_H                 020B 
+           PASEL_L                 020A 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2450 - 2453 (0x4 bytes), align: 0
+  Segment part 5.             Intra module refs:   Segment part 10
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LeftRotateEz            2450 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2454 - 2457 (0x4 bytes), align: 0
+  Segment part 7.             Intra module refs:   Segment part 12
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RightRotateEz           2454 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2400 - 2401 (0x2 bytes), align: 1
+  Segment part 9.             Intra module refs:   Segment part 14
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LeftRotateStep          2400 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2402 - 2403 (0x2 bytes), align: 1
+  Segment part 11.            Intra module refs:   Segment part 18
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RightRotateStep         2402 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2404 - 240B (0x8 bytes), align: 1
+  Segment part 13.            Intra module refs:   ROBOT_Config
+                                                   Segment part 22
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LeftRotaterCtrl         2404 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 240C - 2413 (0x8 bytes), align: 1
+  Segment part 15.            Intra module refs:   ROBOT_Config
+                                                   Segment part 22
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LeftClawCtrl            240C 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2414 - 241B (0x8 bytes), align: 1
+  Segment part 17.            Intra module refs:   ROBOT_Config
+                                                   Segment part 24
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RightRotaterCtrl        2414 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 241C - 2423 (0x8 bytes), align: 1
+  Segment part 19.            Intra module refs:   ROBOT_Config
+                                                   Segment part 24
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RightClawCtrl           241C 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2424 - 2429 (0x6 bytes), align: 1
+  Segment part 21.            Intra module refs:   Segment part 29
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LeftArm                 2424 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 242A - 242F (0x6 bytes), align: 1
+  Segment part 23.            Intra module refs:   Segment part 29
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RightArm                242A 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 25A4 - 2603 (0x60 bytes), align: 0
+  Segment part 25.            Intra module refs:   Segment part 27
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CmdQueue                25A4 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2430 - 2433 (0x4 bytes), align: 1
+  Segment part 26.            Intra module refs:   CmdQ_Pop
+                                                   CmdQ_Push
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CmdQ                    2430 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2434 - 243F (0xc bytes), align: 1
+  Segment part 28.            Intra module refs:   AreArmsBusy
+                                                   ROBOT_Config
+                                                   ROBOT_Init
+                                                   ROBOT_IssueCommand
+                                                   ROBOT_SerialDecode
+                                                   ROBOT_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Robot                   2434 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4F2A - 4F83 (0x5a bytes), align: 1
+  Segment part 44.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ROBOT_Init              4F2A            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 495E - 4A51 (0xf4 bytes), align: 1
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ROBOT_Task              495E            main (main)
+               calls direct
+               CSTACK = 00000000 ( 0000000E )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4CAE - 4D45 (0x98 bytes), align: 1
+  Segment part 42.            Intra module refs:   ROBOT_SerialDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ROBOT_IssueCommand      4CAE 
+               calls direct
+               CSTACK = 00000000 ( 00000014 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5088 - 50DB (0x54 bytes), align: 1
+  Segment part 40.            Intra module refs:   ROBOT_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ROBOT_SerialDecode      5088 
+               calls direct
+               CSTACK = 00000000 ( 0000000A )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 44E0 - 46F9 (0x21a bytes), align: 1
+  Segment part 39.            Intra module refs:   ROBOT_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ROBOT_Config            44E0 
+               calls direct
+               CSTACK = 00000000 ( 00000012 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5332 - 536F (0x3e bytes), align: 1
+  Segment part 38.            Intra module refs:   GenerateCloseAlign
+                                                   GenerateOpenAlign
+                                                   GenerateSequenceCube
+                                                   GenerateSequenceFace
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CmdQ_Push               5332 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53AE - 53EB (0x3e bytes), align: 1
+  Segment part 37.            Intra module refs:   ROBOT_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CmdQ_Pop                53AE 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4DD8 - 4E61 (0x8a bytes), align: 1
+  Segment part 36.            Intra module refs:   ROBOT_IssueCommand
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GenerateSequenceFace    4DD8 
+               calls direct
+               CSTACK = 00000000 ( 00000014 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4B2A - 4BFF (0xd6 bytes), align: 1
+  Segment part 35.            Intra module refs:   ROBOT_IssueCommand
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GenerateSequenceCube    4B2A 
+               calls direct
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58A0 - 58A7 (0x8 bytes), align: 1
+  Segment part 34.            Intra module refs:   GenerateSequenceCube
+                                                   GenerateSequenceFace
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           AlignCube               58A0 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5462 - 5499 (0x38 bytes), align: 1
+  Segment part 33.            Intra module refs:   AlignCube
+                                                   ROBOT_Config
+                                                   ROBOT_Init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GenerateOpenAlign       5462 
+               calls direct
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53EC - 5427 (0x3c bytes), align: 1
+  Segment part 32.            Intra module refs:   AlignCube
+                                                   ROBOT_Config
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GenerateCloseAlign      53EC 
+               calls direct
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5798 - 57AF (0x18 bytes), align: 1
+  Segment part 31.            Intra module refs:   ROBOT_IssueCommand
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ValidateParameters      5798 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 564C - 566D (0x22 bytes), align: 1
+  Segment part 30.            Intra module refs:   ROBOT_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           AreArmsBusy             564C 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4460 - 4463 (0x4 bytes), align: 0
+  Segment part 6.             Intra module refs:   LeftRotateEz
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4464 - 4467 (0x4 bytes), align: 0
+  Segment part 8.             Intra module refs:   RightRotateEz
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4410 - 4411 (0x2 bytes), align: 1
+  Segment part 10.            Intra module refs:   LeftRotateStep
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4412 - 4413 (0x2 bytes), align: 1
+  Segment part 12.            Intra module refs:   RightRotateStep
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4414 - 441B (0x8 bytes), align: 1
+  Segment part 14.            Intra module refs:   LeftRotaterCtrl
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 441C - 4423 (0x8 bytes), align: 1
+  Segment part 16.            Intra module refs:   LeftClawCtrl
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4424 - 442B (0x8 bytes), align: 1
+  Segment part 18.            Intra module refs:   RightRotaterCtrl
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 442C - 4433 (0x8 bytes), align: 1
+  Segment part 20.            Intra module refs:   RightClawCtrl
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4434 - 4439 (0x6 bytes), align: 1
+  Segment part 22.            Intra module refs:   LeftArm
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 443A - 443F (0x6 bytes), align: 1
+  Segment part 24.            Intra module refs:   RightArm
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4440 - 4443 (0x4 bytes), align: 1
+  Segment part 27.            Intra module refs:   CmdQ
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4444 - 444F (0xc bytes), align: 1
+  Segment part 29.            Intra module refs:   Robot
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\RobotArm.r43
+  PROGRAM MODULE, NAME : RobotArm
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 54FA - 5527 (0x2e bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ARM_IsActive            54FA            AreArmsBusy (Robot)
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 571E - 5737 (0x1a bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ARM_Rotate              571E            ROBOT_Task (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 568E - 56AB (0x1e bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ARM_OpenClaw            568E            ROBOT_Task (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5556 - 5581 (0x2c bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ARM_CloseClaw           5556            ROBOT_Task (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 584A - 5859 (0x10 bytes), align: 1
+  Segment part 3.             Intra module refs:   MoveClaw
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ARM_IsClawOpen          584A 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 521A - 5263 (0x4a bytes), align: 1
+  Segment part 2.             Intra module refs:   ARM_CloseClaw
+                                                   ARM_OpenClaw
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           MoveClaw                521A 
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\Servo.r43
+  PROGRAM MODULE, NAME : Servo
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 52AC - 52EF (0x44 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SERVO_SetPosition       52AC            MoveClaw (RobotArm)
+                                                   ROBOT_Config (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000A )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4C00 - 4CAD (0xae bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SERVO_AngleToPosition   4C00            MoveClaw (RobotArm)
+               calls direct
+               CSTACK = 00000000 ( 00000012 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 585A - 5869 (0x10 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SERVO_IsBusy            585A            ARM_IsActive (RobotArm)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5876 - 5881 (0xc bytes), align: 1
+  Segment part 3.             Intra module refs:   SERVO_SetPosition
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ServoMoveTimeoutHandler
+                                   5876 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5896 - 589F (0xa bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SERVO_SetCenter         5896            ROBOT_Config (Robot)
+               CSTACK = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\Stepper.r43
+  PROGRAM MODULE, NAME : Stepper
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 57B0 - 57C5 (0x16 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           STEPPER_Step            57B0            StepTheStepper (StepperController)
+               calls direct
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5814 - 5825 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           STEPPER_StepsPerRev     5814            AngleToSteps (StepperController)
+                                                   ROBOT_Config (Robot)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\StepperController.r43
+  PROGRAM MODULE, NAME : StepperController
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5750 - 5767 (0x18 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           STPCTL_IsBusy           5750            ARM_IsActive (RobotArm)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 512E - 517D (0x50 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           STPCTL_Rotate           512E            ARM_Rotate (RobotArm)
+                                                   ROBOT_Config (Robot)
+               calls direct
+               CSTACK = 00000000 ( 0000000E )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4F84 - 4FDB (0x58 bytes), align: 1
+  Segment part 3.             Intra module refs:   STPCTL_Rotate
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           AngleToSteps            4F84 
+               calls direct
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5428 - 5461 (0x3a bytes), align: 1
+  Segment part 2.             Intra module refs:   STPCTL_Rotate
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           StepTheStepper          5428 
+               calls direct
+               CSTACK = 00000000 ( 0000000A )
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\Timer.r43
+  PROGRAM MODULE, NAME : Timer
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0340 - 0341 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   Timer_TA_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CTL                  0340 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0342 - 0343 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   Timer_TA_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL0                0342 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0344 - 0345 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL1                0344 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0346 - 0347 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL2                0346 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0348 - 0349 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL3                0348 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 034A - 034B (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL4                034A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0352 - 0353 (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   Timer_TA_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR0                 0352 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0354 - 0355 (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR1                 0354 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0356 - 0357 (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR2                 0356 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0358 - 0359 (0x2 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR3                 0358 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 035A - 035B (0x2 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   Segment part 23
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR4                 035A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03C0 - 03C1 (0x2 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   Timer_TB_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TB0CTL                  03C0 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03C2 - 03C3 (0x2 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   Timer_TB_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TB0CCTL0                03C2 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 03D2 - 03D3 (0x2 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   Timer_TB_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TB0CCR0                 03D2 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2464 - 2465 (0x2 bytes), align: 1
+  Segment part 20.            Intra module refs:   TIMER0_B0_ISR
+                                                   TIMER_Init
+                                                   TIMER_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TimerExpired            2464 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2466 - 2497 (0x32 bytes), align: 1
+  Segment part 21.            Intra module refs:   TIMER_Init
+                                                   TIMER_SetTimer
+                                                   TIMER_Task
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SoftTimers              2466 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2440 - 244F (0x10 bytes), align: 1
+  Segment part 22.            Intra module refs:   TIMER_SetCCR
+                                                   TIMER_StartCCR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TimerA_CCRs             2440 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 56CA - 56E5 (0x1c bytes), align: 1
+  Segment part 36.            Intra module refs:   TIMER_Init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer_TA_Init           56CA 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5738 - 574F (0x18 bytes), align: 1
+  Segment part 35.            Intra module refs:   TIMER_Init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer_TB_Init           5738 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5702 - 571D (0x1c bytes), align: 1
+  Segment part 34.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER_Init              5702            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 517E - 51CD (0x50 bytes), align: 1
+  Segment part 33.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER_Task              517E            main (main)
+               calls indirect
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4FDC - 5031 (0x56 bytes), align: 1
+  Segment part 32.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER_SetTimer          4FDC            LEDs (main)
+                                                   SERVO_SetPosition (Servo)
+                                                   STPCTL_Rotate (StepperController)
+                                                   StepTheStepper (StepperController)
+                                                   main (main)
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 57DC - 57EF (0x14 bytes), align: 1
+  Segment part 30.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER_StartCCR          57DC            ROBOT_Init (Robot)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5838 - 5849 (0x12 bytes), align: 1
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER_SetCCR            5838            SERVO_SetPosition (Servo)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 4490 - 4491 (0x2 bytes), align: 1
+  Segment part 27.            Intra module refs:   TIMER0_A0_ISR::??INTVEC 106
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_A0_ISR           4490 
+               interrupt function
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 4492 - 4493 (0x2 bytes), align: 1
+  Segment part 26.            Intra module refs:   TIMER0_A1_ISR::??INTVEC 104
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_A1_ISR           4492 
+               interrupt function
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 4494 - 4499 (0x6 bytes), align: 1
+  Segment part 25.            Intra module refs:   TIMER0_B0_ISR::??INTVEC 118
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B0_ISR           4494 
+               interrupt function
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 449A - 449B (0x2 bytes), align: 1
+  Segment part 24.            Intra module refs:   TIMER0_B1_ISR::??INTVEC 116
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B1_ISR           449A 
+               interrupt function
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFE9 (0x6a bytes), align: 1
+  Segment part 15. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_A1_ISR::??INTVEC 104
+                                   FFE8 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFEB (0x6c bytes), align: 1
+  Segment part 16. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_A0_ISR::??INTVEC 106
+                                   FFEA 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFF5 (0x76 bytes), align: 1
+  Segment part 17. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B1_ISR::??INTVEC 116
+                                   FFF4 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFF7 (0x78 bytes), align: 1
+  Segment part 18. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMER0_B0_ISR::??INTVEC 118
+                                   FFF6 
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4450 - 445F (0x10 bytes), align: 1
+  Segment part 23.            Intra module refs:   TimerA_CCRs
+
+    *************************************************************************
+
+  FILE NAME : D:\Rene\Documents\CSE462\Cubebot\Embedded\Debug\Obj\UART.r43
+  PROGRAM MODULE, NAME : UART
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 022A - 022B (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   UART_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBSEL_L              022A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBSEL                   022A 
+           PBSEL_H                 022B 
+           PBSEL_L                 022A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05C0 - 05C1 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   UART_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0CTLW0_L          05C0 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0CTLW0               05C0 
+           UCA0CTLW0_H             05C1 
+           UCA0CTLW0_L             05C0 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05C6 - 05C7 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   UART_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0BRW_L            05C6 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0BRW                 05C6 
+           UCA0BRW_H               05C7 
+           UCA0BRW_L               05C6 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05C8 - 05C8 (0x1 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   UART_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCA0MCTL                05C8 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05CC - 05CC (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCA0RXBUF               05CC 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05CE - 05CE (0x1 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   UART_Task
+                                                   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCA0TXBUF               05CE 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05DC - 05DD (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   UART_Init
+                                                   UART_Task
+                                                   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0ICTL_L           05DC 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0ICTL                05DC 
+           UCA0ICTL_H              05DD 
+           UCA0ICTL_L              05DC 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05DE - 05DF (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCA0IV                  05DE 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2604 - 2615 (0x12 bytes), align: 0
+  Segment part 11.            Intra module refs:   RxQ_Pop
+                                                   RxQ_Push
+                                                   UART_Init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RxQue                   2604 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2498 - 249F (0x8 bytes), align: 1
+  Segment part 12.            Intra module refs:   UART_Init
+                                                   UART_IsActive
+                                                   UART_Send
+                                                   UART_Task
+                                                   USCI_A0_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TxCtrl                  2498 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 52F0 - 5331 (0x42 bytes), align: 1
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART_Init               52F0            COMM_Init (Comm)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 566E - 568D (0x20 bytes), align: 1
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART_Send               566E            COMM_Send (Comm)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58B0 - 58B7 (0x8 bytes), align: 1
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART_GetRx              58B0            comm_DecodeRx (Comm)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 55AE - 55D9 (0x2c bytes), align: 1
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART_Task               55AE            comm_TxTask (Comm)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58B8 - 58BD (0x6 bytes), align: 1
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART_IsActive           58B8            COMM_Send (Comm)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 55DA - 5601 (0x28 bytes), align: 1
+  Segment part 15.            Intra module refs:   USCI_A0_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RxQ_Push                55DA 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5582 - 55AD (0x2c bytes), align: 1
+  Segment part 14.            Intra module refs:   UART_GetRx
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RxQ_Pop                 5582 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 449C - 44DF (0x44 bytes), align: 1
+  Segment part 13.            Intra module refs:   USCI_A0_ISR::??INTVEC 112
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR             449C 
+               interrupt function
+               calls direct
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFF1 (0x72 bytes), align: 1
+  Segment part 9. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR::??INTVEC 112
+                                   FFF0 
+
+    *************************************************************************
+
+  FILE NAME : D:\Embedded Workbench 7.0\430\lib\dlib\dl430xlsfn.r43
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58DE - 58DF (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            58DE            __exit (?__exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5768 - 577F (0x18 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  5768            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58BE, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   58BE            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58BE - 58C1 (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 4300, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 24A0, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2450, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 4460, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 4468 - 446B (0x4 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         4468            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           4468 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 446C - 4477 (0xc bytes), align: 1
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       446C            CmdQueue (Robot)
+                                                   DecodeCtrl (Comm)
+                                                   RxHandlers (Comm)
+                                                   RxMessage (Comm)
+                                                   RxQue (UART)
+                                                   SoftTimers (Timer)
+                                                   TimerExpired (Timer)
+                                                   TxCtrl (UART)
+                                                   TxMessage (Comm)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 4478 - 4487 (0x10 bytes), align: 1
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       4478            CmdQ (Robot)
+                                                   LeftArm (Robot)
+                                                   LeftClawCtrl (Robot)
+                                                   LeftRotateEz (Robot)
+                                                   LeftRotateStep (Robot)
+                                                   LeftRotaterCtrl (Robot)
+                                                   RightArm (Robot)
+                                                   RightClawCtrl (Robot)
+                                                   RightRotateEz (Robot)
+                                                   RightRotateStep (Robot)
+                                                   RightRotaterCtrl (Robot)
+                                                   Robot (Robot)
+                                                   TimerA_CCRs (Timer)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 4488 - 448F (0x8 bytes), align: 1
+  Segment part 23.            Intra module refs:   Segment part 12
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       4488 
+           ?cstart_end             4490 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 12 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58CE - 58D1 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    58CE            Segment part 23 (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Cast32f32i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4D46 - 4DD7 (0x92 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32sto32f           4D46            ROBOT_Config (Robot)
+           _Cast32uto32f           4D5A            AngleToSteps (StepperController)
+                                                   ROBOT_Config (Robot)
+                                                   ROBOT_Task (Robot)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Cast32fto32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 586A - 5875 (0xc bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32fto32u           586A            AngleToSteps (StepperController)
+                                                   SERVO_AngleToPosition (Servo)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_Extract
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 51CE - 5219 (0x4c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_Extract            51CE            _Cast32fto32u (_Cast32fto32u)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_GE
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5032 - 5087 (0x56 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_GE                 5032            _CmpGe32f (_CmpGe32f)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_LT
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 50DC - 512D (0x52 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_LT                 50DC            _CmpLt32f (_CmpLt32f)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _CmpGe32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 588C - 5895 (0xa bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _CmpGe32f               588C            MoveClaw (RobotArm)
+                                                   SERVO_AngleToPosition (Servo)
+                                                   STPCTL_Rotate (StepperController)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _CmpLt32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5882 - 588B (0xa bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _CmpLt32f               5882            AngleToSteps (StepperController)
+                                                   SERVO_AngleToPosition (Servo)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Div32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 482E - 495D (0x130 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div32f                 482E            AngleToSteps (StepperController)
+                                                   ROBOT_Config (Robot)
+                                                   SERVO_AngleToPosition (Servo)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32fHwLoc2
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 46FA - 482D (0x134 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32fHwLoc2           46FA            ARM_CloseClaw (RobotArm)
+                                                   AngleToSteps (StepperController)
+                                                   ROBOT_Config (Robot)
+                                                   ROBOT_Task (Robot)
+                                                   SERVO_AngleToPosition (Servo)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 56E6 - 5701 (0x1c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod8u               56E6 
+           ?DivMod16u              56EA            TIMER_SetTimer (Timer)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 57F0 - 5801 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  57F0            COMM_Send (Comm)
+                                                   __data16_memcpy (?memzero)
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memset
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5826 - 5837 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memset                  5826            COMM_Init (Comm)
+                                                   TIMER_Init (Timer)
+                                                   UART_Init (UART)
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5802 - 5813 (0x12 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        5802            ?cstart_init_zero (?cstart)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 58D6 - 58D9 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         58D6            ?cstart_init_copy (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?IndCallR11
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58D2 - 58D5 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?IndCallR11             58D2            comm_DispatchMessage (Comm)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?IndCallR15
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 58DA - 58DD (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?IndCallR15             58DA            TIMER_Task (Timer)
+
+
+
+
+                ****************************************
+                *                                      *
+                *            MODULE SUMMARY            *
+                *                                      *
+                ****************************************
+
+Module               CODE      DATA      CONST
+------               ----      ----      -----
+                    (Rel)  (Rel)  (Abs)  (Rel)
+?Cast32f32i           146
+?DivMod816u            28
+?FLT_Extract           76
+?FLT_GE                86
+?FLT_LT                82
+?IndCallR11             4
+?IndCallR15             4
+?Mul32fHwLoc2         308
+?__dbg_break            2
+?__exit                24
+?_exit                  4
+?cstart                40
+?exit                   4
+?memcpy                18
+?memset                18
+?memzero               22
+?reset_vector           2
+Comm                  482    272
+DigitalIO             132             8     16
+EasyDriver             66
+Robot               1 766    168      2     72
+RobotArm              236
+Servo                 280
+Stepper                40
+StepperController     250
+Timer                 296     68     28     16
+  + common            120
+UART                  308     26     13
+  + common            114
+_Cast32fto32u          12
+_CmpGe32f              10
+_CmpLt32f              10
+_Div32f               304
+main                  182            12
+  + shared                            4
+N/A (command line)           256
+N/A (alignment)
+----------          -----    ---     --    ---
+Total:              5 242    790     67    104
+  + common            120
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0102 - 0103               2   rel    0
+                                       015C - 015D               2 
+                                       0168 - 0169               2 
+                                       016C - 016F               4 
+                                       0202 - 0205               4 
+                                       020A - 020B               2 
+                                       0222 - 0225               4 
+                                       022A - 022B               2 
+                                       0242 - 0243               2 
+                                       024A - 024B               2 
+                                       0262 - 0263               2 
+                                       0340 - 034B               C 
+                                       0352 - 035B               A 
+                                       03C0 - 03C3               4 
+                                       03D2 - 03D3               2 
+                                       05C0 - 05C1               2 
+                                       05C6 - 05C8               3 
+                                       05CC - 05CC               1 
+                                       05CE - 05CE               1 
+                                       05DC - 05DF               4 
+DATA16_I                               2400 - 2457              58   rel    1
+DATA16_Z                               2458 - 2615             1BE   rel    1
+CSTACK                                 4300 - 43FF             100   rel    1
+DATA16_C                               4400 - 440F              10   rel    1
+DATA16_ID                              4410 - 4467              58   rel    1
+CSTART                                 4468 - 448F              28   rel    1
+ISR_CODE                               4490 - 44DF              50   rel    1
+<CODE> 1                               44E0 - 58DF            1400   rel    1
+INTVEC                                 FF80 - FFF7              78   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 5 362 bytes of CODE  memory
+   790 bytes of DATA  memory (+ 67 absolute )
+   104 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

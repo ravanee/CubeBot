@@ -1,0 +1,116 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-1285602617
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[State Storage]
+Control Register=0
+[EEM State Storage]
+Buffer=BAAAAAAAAAAAAAAAAAAAAAAA
+[Sequencer]
+Control Register=0
+NextState0=0
+NextState1=0
+[Action Register]
+Break=0
+State Storage=0
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Breakpoints2]
+Count=0
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[NumberOfSequencerBp]
+Number=4
+[EEM Sequencer]
+Buffer=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[struct_types]
+Fmt0=RX_Queue-NextEmpty	3	0
+Fmt1=RX_Queue-Unload	3	0
+[watch_formats]
+Fmt0={W}0:position	3	0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\Windows\system32}.233.6" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{E:\}.36.6" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\Comm.c}.137.12" 0 0 0 0 "" 0 ""
+Bp3=_ "STD_CODE" "{$PROJ_DIR$\Comm.c}.233.6" 0 0 0 0 "" 0 ""
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\Robot.c}.343.11" 0 0 0 0 "" 0 ""
+Bp5=_ "STD_CODE" "{$PROJ_DIR$\Robot.c}.298.14" 0 0 0 0 "" 0 ""
+Count=6
+[FET]
+Clock mode=46
+Extended Clock mode=1055
+Secure Password=
+Extended Clock Control Enable=1
+Advanced Extended Clock Control=0
+Emulation mode=0
+Free running=0
+Shutting Down=3
+[Memory Dump]
+Start address=
+Lenghth=
+Address info=0
+Format=0
+Dump registers=0
+PC=0
+SP=0
+SR=0
+all registers=0
+File name=
+[Aliases]
+A0=_ "E:\Cubebot\Embedded\RobotArm.c" ""
+A1=_ "E:\Cubebot\Embedded\Timer.c" ""
+A2=_ "E:\Cubebot\Embedded\main.c" ""
+A3=_ "F:\Cubebot\Embedded\StepperController.c" ""
+A4=_ "H:\cubebot\Embedded\comms.c" ""
+A5=_ "H:\cubebot\comms.c" ""
+A6=_ "H:\cubebot\main.c" ""
+A7=_ "H:\cubebot\rs232.c" ""
+A8=_ "H:\cubebot\timer.c" ""
+A9=_ "H:\cubebot\uart.c" ""
+Count=10
+SuppressDialog=1

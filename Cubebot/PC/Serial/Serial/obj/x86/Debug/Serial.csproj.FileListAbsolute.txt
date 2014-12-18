@@ -1,0 +1,25 @@
+H:\cubebot\PC\Serial\Serial\bin\Debug\Serial.exe
+H:\cubebot\PC\Serial\Serial\bin\Debug\Serial.pdb
+H:\cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+H:\cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+C:\Documents and Settings\Rene A\My Documents\CSE462\New Folder\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+C:\Documents and Settings\Rene A\My Documents\CSE462\New Folder\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+C:\Documents and Settings\Rene A\My Documents\CSE462\New Folder\PC\Serial\Serial\bin\Debug\Serial.exe
+C:\Documents and Settings\Rene A\My Documents\CSE462\New Folder\PC\Serial\Serial\bin\Debug\Serial.pdb
+C:\Documents and Settings\Rene A\My Documents\CSE462\New Folder\PC\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rene A\My Documents\CSE462\Cubebot\PC\Serial\Serial\bin\Debug\Serial.exe
+C:\Documents and Settings\Rene A\My Documents\CSE462\Cubebot\PC\Serial\Serial\bin\Debug\Serial.pdb
+C:\Documents and Settings\Rene A\My Documents\CSE462\Cubebot\PC\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rene A\My Documents\CSE462\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+C:\Documents and Settings\Rene A\My Documents\CSE462\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+E:\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+E:\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+F:\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+F:\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+F:\Cubebot\PC\Serial\Serial\bin\Debug\Serial.exe
+F:\Cubebot\PC\Serial\Serial\bin\Debug\Serial.pdb
+F:\Cubebot\PC\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Rene\Documents\CSE462\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.exe
+D:\Rene\Documents\CSE462\Cubebot\PC\Serial\Serial\obj\x86\Debug\Serial.pdb
+D:\Rene\Documents\CSE462\Cubebot\PC\Serial\Serial\bin\Debug\Serial.exe
+D:\Rene\Documents\CSE462\Cubebot\PC\Serial\Serial\bin\Debug\Serial.pdb

@@ -10,12 +10,13 @@ typedef struct
      SteprCtrl *    Rotater;
      ServoCtrl *    Claw;
      BOOL           ClawOpen;
+     float          ClawSwing;
 }RobotArm;
 
 
 void ARM_Rotate(RobotArm * Arm, float Degrees);
-void ARM_OpenClaw(RobotArm * Arm, float Degrees);
-void ARM_CloseClaw(RobotArm * Arm, float Degrees);
+void ARM_MoveClaw(RobotArm * Arm, float Degrees);
+//void ARM_CloseClaw(RobotArm * Arm, float Degrees);
 BOOL ARM_IsClawOpen(RobotArm * Arm);
 BOOL ARM_IsActive(RobotArm * Arm);
 

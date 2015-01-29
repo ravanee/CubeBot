@@ -6,92 +6,138 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Comm.c</file>
-      <file>$PROJ_DIR$\EasyDriver.c</file>
-      <file>$PROJ_DIR$\UART.c</file>
-      <file>$PROJ_DIR$\Servo.c</file>
-      <file>$PROJ_DIR$\RobotArm.c</file>
       <file>$PROJ_DIR$\Robot.c</file>
+      <file>$PROJ_DIR$\RobotArm.c</file>
+      <file>$PROJ_DIR$\Servo.c</file>
       <file>$PROJ_DIR$\Stepper.c</file>
+      <file>$PROJ_DIR$\Comm.c</file>
       <file>$PROJ_DIR$\StepperController.c</file>
       <file>$PROJ_DIR$\DigitalIO.c</file>
-      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\UART.c</file>
+      <file>$PROJ_DIR$\EasyDriver.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\UART.r43</file>
+      <file>$PROJ_DIR$\EasyDriver.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\lnk430f5529.xcl</file>
+      <file>$PROJ_DIR$\UART.h</file>
       <file>$PROJ_DIR$\Timer.c</file>
       <file>$PROJ_DIR$\comms.h</file>
-      <file>$PROJ_DIR$\RS232.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Comm.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\digital_io.pbi</file>
-      <file>$PROJ_DIR$\UART.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dl430xsfn.h</file>
-      <file>$PROJ_DIR$\RobotArm.h</file>
-      <file>$PROJ_DIR$\RS232.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\UART.pbi</file>
-      <file>$PROJ_DIR$\DigitalIO.h</file>
-      <file>$PROJ_DIR$\digital_io.c</file>
-      <file>$PROJ_DIR$\ISR_TIMER_A.c</file>
-      <file>$PROJ_DIR$\Servo.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Servo.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\Servo.pbi</file>
-      <file>$TOOLKIT_DIR$\config\linker\lnk430f5529.xcl</file>
-      <file>$PROJ_DIR$\Debug\Obj\DigitalIO.r43</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Stepper.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\cubebot.ulp</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
-      <file>$PROJ_DIR$\Robot.h</file>
-      <file>$PROJ_DIR$\EasyDriver.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\DigitalIO.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\StepperController.r43</file>
-      <file>$PROJ_DIR$\comms.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\StepperController.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Robot.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\comms.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\Stepper.r43</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\RS232.r43</file>
-      <file>$PROJ_DIR$\digital_io.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\RS232.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\cubebot.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\EasyDriver.r43</file>
-      <file>$TOOLKIT_DIR$\inc\msp430f5529.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\RobotArm.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\Comm.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\Timer.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\Robot.r43</file>
-      <file>$TOOLKIT_DIR$\inc\in430.h</file>
       <file>$PROJ_DIR$\Debug\Obj\digital_io.r43</file>
-      <file>$PROJ_DIR$\Timer.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\comms.pbi</file>
-      <file>$PROJ_DIR$\Types.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\EasyDriver.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\RobotArm.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Comm.h</file>
-      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\Debug\List\cubebot.map</file>
-      <file>$PROJ_DIR$\Stepper.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Timer.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\UART.r43</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xsfn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS232.pbi</file>
+      <file>$PROJ_DIR$\RS232.c</file>
+      <file>$PROJ_DIR$\RobotArm.h</file>
       <file>$TOOLKIT_DIR$\config\linker\multiplier32_loc2.xcl</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
-      <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.h</file>
-      <file>$PROJ_DIR$\StepperController.h</file>
-      <file>$PROJ_DIR$\Debug\Exe\cubebot.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\ISR_TIMER_A.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Robot.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cubebot.pbd</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Robot.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\comms.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Stepper.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\digital_io.c</file>
+      <file>$PROJ_DIR$\digital_io.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\EasyDriver.r43</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.h</file>
+      <file>$PROJ_DIR$\ISR_TIMER_A.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RobotArm.pbi</file>
+      <file>$PROJ_DIR$\Types.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Comm.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\cubebot.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\UART.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Stepper.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Comm.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\EasyDriver.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\DigitalIO.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\digital_io.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\StepperController.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\comms.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Servo.r43</file>
+      <file>$PROJ_DIR$\RS232.h</file>
+      <file>$PROJ_DIR$\Stepper.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Servo.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\cubebot.map</file>
+      <file>$TOOLKIT_DIR$\inc\msp430f5529.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS232.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\cubebot.ulp</file>
+      <file>$PROJ_DIR$\comms.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Robot.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Comm.pbi</file>
+      <file>$PROJ_DIR$\Timer.h</file>
+      <file>$PROJ_DIR$\DigitalIO.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Timer.pbi</file>
+      <file>$PROJ_DIR$\StepperController.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RobotArm.r43</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Timer.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\ISR_TIMER_A.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\StepperController.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\DigitalIO.pbi</file>
+      <file>$PROJ_DIR$\Servo.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\Comm.c</name>
+      <name>$PROJ_DIR$\Robot.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 14</file>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 71 46 26 39 48 19 69 56 10 66 65 76</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 59 71 46 26 39 48 19 69 56 10 66 65 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RobotArm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 39 69 56 10 66 65 76</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 19 39 69 56 10 66 65 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Servo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
         </tool>
         <tool>
           <name>ICC430</name>
@@ -101,20 +147,81 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 11 62 52 35 60 47 74 67 44 65 32 16</file>
+          <file> 65 39 76</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 11 62 52 35 60 47 74 67 44 65 32 16</file>
+          <file> 65 39 76</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\EasyDriver.c</name>
+      <name>$PROJ_DIR$\Stepper.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 63</file>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56 39 10 66</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 56 39 10 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Comm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 45 25 47 23 36 43 78 77 24 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\StepperController.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 56 39 10 66 65</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 69 56 39 10 66 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\DigitalIO.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
         </tool>
         <tool>
           <name>ICC430</name>
@@ -124,11 +231,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 34 21 62</file>
+          <file> 59 71 46 66 39</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 34 21 62</file>
+          <file> 59 71 46 66 39</file>
         </tool>
       </inputs>
     </file>
@@ -137,53 +244,179 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 20</file>
+          <file> 42</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 71</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 16 62</file>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 12 39</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 16 62</file>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 12 39</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Servo.c</name>
+      <name>$PROJ_DIR$\EasyDriver.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 26</file>
+          <file> 49</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 25</file>
+          <file> 35</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 59 62 24</file>
+          <file> 10 66 39</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 59 62 24</file>
+          <file> 10 66 39</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\RobotArm.c</name>
+      <name>$PROJ_DIR$\Timer.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 64</file>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 39 65</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 39 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RS232.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 12</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 39 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 39 48 65 26 66</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 59 71 46 45 25 47 23 36 43 78 77 24 39 48 65 26 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\digital_io.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 59 71 46 34 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ISR_TIMER_A.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 71 46 65 39</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 59 71 46 65 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\cubebot.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 11 20 40 50 35 21 63 70 54 31 52 72 9 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\comms.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
         </tool>
         <tool>
           <name>ICC430</name>
@@ -193,187 +426,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 18 62 75 69 34 21 59 24</file>
+          <file> 48 39 45 25 47 23 16 43 78 77 24 55</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 18 62 75 69 34 21 59 24</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Robot.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 41</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 57 29 33 62 66 18 75 69 34 21 59 24</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 33 62 66 18 75 69 34 21 59 24</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Stepper.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 30</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 43</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 69 62 34 21</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 69 62 34 21</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\StepperController.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 40</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 38</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 75 69 62 34 21 59</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 75 69 62 34 21 59</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\DigitalIO.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 36</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 28</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 57 29 21 62</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 21 62</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 13</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 37</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 62 66 59 33 24 21</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 62 66 59 33 24 21</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Timer.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 70</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 55</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 62 59</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 52 35 60 47 74 67 44 65 32 62 59</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\RS232.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 48</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 45</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 62 16</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 62 16</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\digital_io.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 15</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 58</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 46 62</file>
+          <file> 48 39 45 25 47 23 16 43 78 77 24 55</file>
         </tool>
       </inputs>
     </file>
@@ -381,75 +438,14 @@
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
-          <name>XLINK</name>
-          <file> 76 68</file>
-        </tool>
-        <tool>
           <name>ULP430</name>
-          <file> 31</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\ISR_TIMER_A.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 78</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 77</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51 57 29 59 62</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 51 57 29 59 62</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\comms.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
           <file> 61</file>
         </tool>
         <tool>
-          <name>ICC430</name>
-          <file> 42</file>
+          <name>XLINK</name>
+          <file> 41 58</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 66 62 52 35 60 47 17 67 44 65 32 19</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 66 62 52 35 60 47 17 67 44 65 32 19</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\cubebot.d43</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 68</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 27 72 54 28 50 37 56 53 25 43 38 55 71 73</file>
-        </tool>
-      </inputs>
     </file>
   </configuration>
   <configuration>

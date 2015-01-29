@@ -18,7 +18,7 @@
      #define OPEN_SWING       (18.0f)
 #endif
 
-#define ALIGN_SWING      (10.0f)
+#define ALIGN_SWING      (15.0f)
 
 //////////// EASY DRIVER OBJECTS ////////////
 static EzControl LeftRotateEz = 
@@ -99,14 +99,16 @@ static RobotArm LeftArm =
 {
      .Rotater = &LeftRotaterCtrl,
      .Claw = &LeftClawCtrl,
-     .ClawOpen = FALSE
+     .ClawOpen = FALSE,
+     .ClawSwing = 40.0f
 };
 
 static RobotArm RightArm = 
 {
      .Rotater = &RightRotaterCtrl,
      .Claw = &RightClawCtrl,
-     .ClawOpen = FALSE
+     .ClawOpen = FALSE,
+     .ClawSwing = 48.0f
 };
 
 //////////////////////////////////////////
@@ -156,7 +158,7 @@ static CommandQueue CmdQ =
 static RobotControl Robot = 
 {
      .Busy = FALSE,
-     .CurrentCmd = {Left, Open, D90},
+     .CurrentCmd = {Left, OpenAlign, D0},
      .LeftArm = &LeftArm,
      .RightArm = &RightArm,
      .RespondCmd = CMD_ROBOT
@@ -171,6 +173,63 @@ static BOOL AreArmsBusy(void);
 static void AlignCube(void); 
 static void GenerateOpenAlign(void);
 static void GenerateCloseAlign(void);
+
+static void testScript(void * args);
+static void testScript(void * args)
+{
+     static int state = 0;
+     
+     if(Robot.Busy == FALSE)
+     {
+          switch(state)
+          {
+               case 0 : 
+                    AlignCube();
+                    Robot.Busy = TRUE;
+                    break;
+               case 1 : 
+                    ROBOT_IssueCommand(Left, FACE_CW, D90);
+                    Robot.Busy = TRUE;
+                    break;
+               case 2 : 
+                    ROBOT_IssueCommand(Left, FACE_CCW, D180);
+                    Robot.Busy = TRUE;
+                    break;
+               case 3 :
+                    ROBOT_IssueCommand(Right, FACE_CW, D90);
+                    Robot.Busy = TRUE;
+                    break;
+               case 4 : 
+                    ROBOT_IssueCommand(Right, FACE_CCW, D180);
+                    Robot.Busy = TRUE;
+                    break;
+               case 5 : 
+                    ROBOT_IssueCommand(Left, CUBE_CW, D90);
+                    Robot.Busy = TRUE;
+                    break;
+               case 6 : 
+                    ROBOT_IssueCommand(Left, CUBE_CCW, D180);
+                    Robot.Busy = TRUE;
+                    break;
+               case 7 :
+                    ROBOT_IssueCommand(Right, CUBE_CW, D90);
+                    Robot.Busy = TRUE;
+                    break;
+               case 8 : 
+                    ROBOT_IssueCommand(Right, CUBE_CCW, D180);
+                    Robot.Busy = TRUE;
+                    break;
+               case 9 : 
+                    state = 0;
+                    break;
+                    
+          }
+          state++;
+     }
+     TIMER_SetTimer(TIMER_TEST, 500, testScript, 0);
+}
+
+
 
 void ROBOT_Init(void)
 {   
@@ -200,8 +259,12 @@ void ROBOT_Init(void)
      
      // First Open the Claw
      GenerateOpenAlign();
-     Robot.Busy = TRUE;
-    
+
+     
+     /////////////////////////// TEST SCRIPT ////////////////////////////////
+     //////////// REMOVE IF YOU WANT TO USE SERIAL COMMANDS /////////////////
+     TIMER_SetTimer(TIMER_TEST, 1500, testScript, 0);
+     
      // Initialize Serial Communication Receive
      COMM_RegisterHandler(CMD_ROBOT,         ROBOT_SerialDecode); 
      COMM_RegisterHandler(CMD_ROBOT_CONFIG,  ROBOT_Config); 
@@ -250,19 +313,21 @@ void ROBOT_Task(void)
                               break;
                          case Open :
                               // Open the arm's claw
-                              ARM_OpenClaw(arm, OPEN_SWING);
+                              ARM_MoveClaw(arm, arm->ClawSwing);
                               break;
                          case Close :
                               // Close the arm's claw
-                              ARM_CloseClaw(arm, OPEN_SWING);
+                              ARM_MoveClaw(arm, -arm->ClawSwing);
                               break;
                          case OpenAlign :
                               // Open the arm's claw
-                              ARM_OpenClaw(arm, ALIGN_SWING);
+                              ARM_MoveClaw(Robot.RightArm, -Robot.RightArm->ClawSwing + ALIGN_SWING);
+                              ARM_MoveClaw(Robot.LeftArm, -Robot.LeftArm->ClawSwing + ALIGN_SWING);
                               break;
                          case CloseAlign :
                               // Close the arm's claw
-                              ARM_CloseClaw(arm, ALIGN_SWING);
+                              ARM_MoveClaw(Robot.RightArm, -Robot.RightArm->ClawSwing);
+                              ARM_MoveClaw(Robot.LeftArm, -Robot.LeftArm->ClawSwing);
                               break;
 
                     }
@@ -670,10 +735,10 @@ static void GenerateOpenAlign(void)
      tempCmd.Rotate = D0; // Don't care
      CmdQ_Push(tempCmd);
      
-     tempCmd.Arm = Right;
+    /* tempCmd.Arm = Right;
      tempCmd.Action = OpenAlign;
      tempCmd.Rotate = D0; // Don't care
-     CmdQ_Push(tempCmd);
+     CmdQ_Push(tempCmd);*/
 }
 
 static void GenerateCloseAlign(void)
@@ -685,10 +750,10 @@ static void GenerateCloseAlign(void)
      tempCmd.Rotate = D0; // Don't care
      CmdQ_Push(tempCmd);
      
-     tempCmd.Arm = Right;
+    /* tempCmd.Arm = Right;
      tempCmd.Action = CloseAlign;
      tempCmd.Rotate = D0; // Don't care
-     CmdQ_Push(tempCmd);
+     CmdQ_Push(tempCmd);*/
 }
 
 static BOOL ValidateParameters(ArmId Arm, ArmAction Action, ArmRotate Rotate)
@@ -701,3 +766,26 @@ static BOOL AreArmsBusy(void)
      // See if the arms are currently moving
      return (ARM_IsActive(Robot.LeftArm) || ARM_IsActive(Robot.RightArm));
 }
+
+#if 0
+#include "Servo.h"
+
+// Servo debug movement function (walk the angles)
+void servo(void * n)
+{
+     static int mod = 0;
+     if(mod > 1200)
+     {
+          mod = 0;
+          TIMER_SetCCR(TA_CCR4, 900 + mod);
+          TIMER_SetTimer(TIMER_TEST, 600, servo, 0);
+     }
+     else
+     {
+          TIMER_SetCCR(TA_CCR4, 900 + mod);
+          mod += 60;
+          TIMER_SetTimer(TIMER_TEST, 200, servo, 0);
+     }
+}
+
+#endif

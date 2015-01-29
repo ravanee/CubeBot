@@ -28,7 +28,7 @@ void ARM_Rotate(RobotArm * Arm, float Degrees)
      }
 }
 
-void ARM_OpenClaw(RobotArm * Arm, float Degrees)
+void ARM_MoveClaw(RobotArm * Arm, float Degrees)
 {
      // Is this pointer valid? (not null)
      if(Arm)
@@ -36,10 +36,10 @@ void ARM_OpenClaw(RobotArm * Arm, float Degrees)
           // Setup the claw to open
           MoveClaw(Arm, Degrees);
           // Set claw as currently open
-          Arm->ClawOpen = TRUE;
+          //Arm->ClawOpen = TRUE;
      } 
 }
-
+/*
 void ARM_CloseClaw(RobotArm * Arm, float Degrees)
 {
      // Is this pointer valid? (not null)
@@ -51,7 +51,7 @@ void ARM_CloseClaw(RobotArm * Arm, float Degrees)
           Arm->ClawOpen = FALSE;
      }
 }
-
+*/
 BOOL ARM_IsClawOpen(RobotArm * Arm)
 {
      // Is this pointer valid? (not null)
@@ -66,14 +66,8 @@ BOOL ARM_IsClawOpen(RobotArm * Arm)
 
 static void MoveClaw(RobotArm * Arm, float Degrees)
 {
-     // Allow if:
-     // Attempt to Open and Claw is Closed
-     // Attempt to Close and Claw is Opened
-     if((Degrees > 0) ^ ARM_IsClawOpen(Arm))
-     {
-          // Rotate the claw based on Open or Closed
-          uint16 position = SERVO_AngleToPosition(Arm->Claw, Degrees);
-          SERVO_SetPosition(Arm->Claw, position);
-     }
+     // Rotate the claw based on Open or Closed
+     uint16 position = SERVO_AngleToPosition(Arm->Claw, Degrees);
+     SERVO_SetPosition(Arm->Claw, position);
 }
 

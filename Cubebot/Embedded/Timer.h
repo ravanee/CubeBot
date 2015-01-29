@@ -7,6 +7,7 @@ typedef void (*ExpireHandler) (void *);
 typedef enum
 {
      TIMER_TEST = 0,
+     TIMER_LEDS,
      TIMER_LEFT_ROTATE,
      TIMER_LEFT_CLAW,
      TIMER_RIGHT_ROTATE,

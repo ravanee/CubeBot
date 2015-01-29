@@ -2,7 +2,7 @@
 #include "Stepper.h"
 #include "Timer.h"
 #include "Types.h"
-#define MILLISEC_PER_STEP     (5)
+#define MILLISEC_PER_STEP     (2)
 
 static uint16 AngleToSteps(float Angle);
 static void StepTheStepper(void * Stepper);

@@ -5,7 +5,7 @@
 #include "Types.h"
 
 #define SERVO_DEFAULT_CENTER  (1500)
-#define SERVO_MOVEMENT_TIMEOUT (1000)
+#define SERVO_MOVEMENT_TIMEOUT (500)
 
 typedef struct
 {
